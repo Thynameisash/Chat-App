@@ -31,7 +31,7 @@ const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
 // const navigation = useNavigation();
 
-const App = ({ navigation }) => {
+const App = ({}) => {
   const [currUser, setCurrUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const {

@@ -7,12 +7,12 @@ export default function Logout() {
   const navigation = useNavigation();
   useEffect(() => {
     const unsubscribe = navigation.addListener("focus", async () => {
-      console.log(auth.currentUser);
+      // console.log(auth.currentUser);
       auth.signOut().then(() => {
         alert("Signed Out");
         navigation.replace("signIn");
       });
-      console.log(auth.currentUser);
+      // console.log(auth.currentUser);
     });
     return unsubscribe;
   }, [navigation]);
